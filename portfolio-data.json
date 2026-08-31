@@ -1,0 +1,279 @@
+{
+  "personal": {
+    "name": "Md. Habibullah Pappu",
+    "title": "Network Engineer & System Specialist",
+    "bio": "Through my journey, I have encountered lots of opportunities to experience and gather knowledge in networking, system and security domain. Now I am seeking new challenges and opportunities with an organization in need of someone similar to my skill sets and suitable for long term career goals.",
+    "location": "Natun Bazar, Badda, Dhaka -1229",
+    "status": "Available for Hire"
+  },
+  "contact": {
+    "email": "pappuhabibullah@gmail.com",
+    "phone": [
+      "+8801611581981",
+      "+8801970907655"
+    ],
+    "location": "Dhaka, Bangladesh",
+    "linkedin": "https://linkedin.com/in/habibullah-pappu/",
+    "github": "https://github.com/habibpappu",
+    "website": "https://habibpappu.github.io/"
+  },
+  "experience": [
+    {
+      "company": "HRC Technologies Limited",
+      "position": "Manager – Core Network",
+      "duration": "July 2026 – Present",
+      "responsibilities": [
+        "Lead planning, design, and management of Core Network and System Operations to ensure high availability, reliability, security, and optimal performance",
+        "Manage integration and connectivity with IIG, NTTN, IX, CDN, cache platforms, upstream providers, and third-party network partners",
+        "Collaborate with cross-functional teams to implement secure, scalable, and high-performance network solutions aligned with requirements",
+        "Prepare technical proposals, capacity plans, project documentation, management reports, and budget requirements for infrastructure development",
+        "Drive continuous improvement initiatives to enhance network resilience, service availability, operational efficiency, and infrastructure scalability"
+      ]
+    },
+    {
+      "company": "BRACNet Limited",
+      "position": "Deputy Manager – Core Network",
+      "duration": "January 2025 – June 2026",
+      "responsibilities": [
+        "Plan, design, and manage the integration of connectivity with multiple stakeholders, including upstream providers, telecom operators, banks, vendors, IXN partners, and third-party entities",
+        "Responsible for seamless internet and data connectivity by leveraging Routing & Switching technologies",
+        "Supervised a 24/7 core network operations team, serving as the primary escalation point during outages",
+        "Analyze client requirements, coordinate with vendors and stakeholders, and support managed service operations teams"
+      ]
+    },
+    {
+      "company": "BRACNet Limited",
+      "position": "Assistant Manager – Core Network",
+      "duration": "July 2024 - December 2024",
+      "responsibilities": [
+        "End-to-end nationwide network management, integration of connectivity with IIGs, IXNs and third-party entities",
+        "Maintain cache servers (GGC, FNA) for efficient content delivery",
+        "Manage Inter-AS IX peering for with IXP partners for local traffic",
+        "Conducting RNDs and evaluation objectives translation into action plans"
+      ]
+    },
+    {
+      "company": "NovoCom Limited",
+      "position": "Senior System Engineer – Core Network Operations (IP & Data)",
+      "duration": "February 2023 – June 2024",
+      "responsibilities": [
+        "Provide Level-2 and Level-3 support for all data network related monitoring and operation management for IIG, ITC, IGW, ISP, IPTSP and IXN",
+        "Setting up nationwide backbone network as part of the team, provisioning supplier for IIG, ITC and IGW",
+        "Manage and maintain routing policy and Partner provisioning for NovoNIX ASN 63520 (Internet exchange point)"
+      ]
+    },
+    {
+      "company": "NovoCom Limited",
+      "position": "System Engineer – Core Network Operations (IP & Data)",
+      "duration": "January 2022 – January 2023",
+      "responsibilities": [
+        "Managing, maintaining & troubleshooting NovoCom (IIG & ITC), NovoTel (IGW & IOS) and InterCloud (ISP & IPTSP) datacom core network on 24/7 roster basis",
+        "Planning, tuning and implement routing, controlling prefixes to meet optimization"
+      ]
+    },
+    {
+      "company": "NovoCom Limited",
+      "position": "System Engineer – Transmission Core & Network Operations",
+      "duration": "August 2021 – December 2021",
+      "responsibilities": [
+        "24/7 Roster basis IP & SDH network monitoring for ISP/IIG/ITC/IPLC/IGW/IPTSP/ICX",
+        "Working on different NMS/EMS tools for monitoring, inspection and fault diagnostics",
+        "Maintaining and provisioning internet, L2/L3 data services and TDM connectivity"
+      ]
+    },
+    {
+      "company": "LR Telecom Limited",
+      "position": "Engineer (NOC)",
+      "duration": "January 2021 – July 2021",
+      "responsibilities": [
+        "Monitoring live Data & SDH network, Bandwidth utilization, transmission network distribution over IPLC and Alarms",
+        "Configuring soft switches, regular health checkup of core devices"
+      ]
+    },
+    {
+      "company": "LR Telecom Limited",
+      "position": "Assistant Engineer (NOC)",
+      "duration": "May 2018 – December 2020",
+      "responsibilities": [
+        "Monitoring live Data & SDH network, Bandwidth utilization, transmission network distribution over IPLC and Alarms",
+        "Configuring soft switches and MUX maintenance"
+      ]
+    },
+    {
+      "company": "Daffodil International University",
+      "position": "Teaching Assistant",
+      "duration": "September 2016 – April 2018",
+      "responsibilities": [
+        "Making course plan along with lesson plan and take steps to ensure academic progress",
+        "Working on student's development, promote their learning and student management",
+        "Implementing blended learning using MOODLE and Google Classroom"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "M.Sc. in Computer Science and Engineering (Major in Cyber Security)",
+      "institution": "UIU",
+      "status": "Enrolled"
+    },
+    {
+      "degree": "B.Sc. in Electronics and Telecommunication Engineering (ETE)",
+      "institution": "DIU",
+      "result": "CGPA 3.83 (On a Scale of 4.00)"
+    },
+    {
+      "degree": "Higher Secondary Certificate (HSC)",
+      "result": "GPA 4.10 (On a Scale of 5.00)"
+    },
+    {
+      "degree": "Secondary School Certificate (SSC)",
+      "result": "GPA 5.00 (On a Scale of 5.00)"
+    }
+  ],
+  "certifications": [
+    "Advanced Certificate for Management Professionals (ACMP) 4.0",
+    "Red Hat Certified System Administrator (RHCSA)",
+    "Cisco Certified Specialist - Enterprise Core (CCNP ENCOR)",
+    "Cisco Certified Network Associate (CCNA)",
+    "APNIC Certified IPv6 Associate",
+    "HCIP - Datacom Advanced Routing & Switching Technology",
+    "HCIP - Datacom - Core Technology",
+    "Huawei Certified ICT Associate (HCIA) - Datacom",
+    "Huawei Datacom Campus Network Associate",
+    "MikroTik Certified Inter-Networking Engineer (MTCINE)",
+    "MikroTik Certified Security Engineer (MTCSE)",
+    "MikroTik Certified Routing Engineer (MTCRE)",
+    "MikroTik Certified Network Associate (MTCNA)",
+    "Fortinet Network Security Professional - 4 (NSE - 4)"
+  ],
+  "skills": [
+    "Network Design & Management",
+    "Cisco Routing & Switching",
+    "BGP & OSPF",
+    "Huawei Equipment",
+    "MikroTik Configuration",
+    "IPv6 Networking",
+    "Network Security",
+    "System Administration",
+    "Linux/RHEL",
+    "Data Center Operations",
+    "ISP Management",
+    "Technical Documentation"
+  ],
+  "awards": [
+    {
+      "title": "Huawei Most Valuable Engineer -2025",
+      "issuer": "Huawei Asia Pacific Region",
+      "icon": "🏆"
+    },
+    {
+      "title": "Huawei O3 Top Member Award – 2025",
+      "issuer": "Huawei Asia Pacific Region",
+      "icon": "🏆"
+    },
+    {
+      "title": "Top Performer Award – Q1, 2025",
+      "issuer": "BRACNet Limited",
+      "icon": "🏆"
+    },
+    {
+      "title": "Best Employee Award – Q4, 2024",
+      "issuer": "BRACNet Limited (BRACNet Core Network Rearrangement Project)",
+      "icon": "🏆"
+    },
+    {
+      "title": "Students Merit Scholarship",
+      "issuer": "B.Sc Program",
+      "icon": "🏆"
+    },
+    {
+      "title": "Champion at Intra-Department Debate Competition",
+      "issuer": "Department of ETE (2016 & 2017)",
+      "icon": "🏆"
+    },
+    {
+      "title": "Champion – Intra-Department Debate Competition",
+      "issuer": "Department of ETE (2016 & 2017)",
+      "icon": "🏆"
+    },
+    {
+      "title": "Runner-Up – Inter-Department Debate Championship 2015",
+      "issuer": "Daffodil International University Debating Club (DIUDC)",
+      "icon": "🥈"
+    },
+    {
+      "title": "Champion & Best Debater – Jatio Durniti Protirodh Soptaho 2013",
+      "issuer": "Bogura Region, organized by Anti-Corruption Commission (DUDOK)",
+      "icon": "🏆"
+    },
+    {
+      "title": "National Environment Day 2011 Award for Social Works",
+      "issuer": "Rural Services Foundation (RSF), a Rahimafrooz Limited Initiative",
+      "icon": "🌱"
+    },
+    {
+      "title": "Champion & Best Debater – School Debate Competition 2009",
+      "issuer": "Bogura Region, organized by BRAC",
+      "icon": "🏆"
+    },
+    {
+      "title": "Champion & Best Debater – Jatiyo Shishu Mousumi Protijogita 2005",
+      "issuer": "Joypurhat District, organized by Bangladesh Government",
+      "icon": "🏆"
+    }
+  ],
+  "trainingSessions": [
+    {
+      "title": "Networking BootCamp: Basics to Beyond",
+      "audience": "BRACNet Customer Support Team",
+      "date": "September 27, 2025"
+    },
+    {
+      "title": "Mastering IPv6: The Next Generation Internet Protocol",
+      "audience": "BRACNet Network & System Solution Team",
+      "date": "May 28, 2025"
+    },
+    {
+      "title": "Networking with Mikrotik",
+      "audience": "BRACNet Transmission Team",
+      "date": "December 21, 2024"
+    },
+    {
+      "title": "Traffic Flow Analysis – IIG, ITC, ISP, IXN",
+      "audience": "NovoCom Data NOC Team",
+      "date": "January 27, 2024"
+    }
+  ],
+  "trainingAttended": [
+    {
+      "title": "Red Hat Certified System Administrator (RHCSA)",
+      "institute": "NovoCom Limited",
+      "duration": "4 Months",
+      "icon": "🐧"
+    },
+    {
+      "title": "Cisco Certified Specialist - Enterprise Core (CCNP ENCOR)",
+      "institute": "Open ICT Ltd.",
+      "duration": "8 Months",
+      "icon": "🔀"
+    },
+    {
+      "title": "Cisco Certified Network Associate (CCNA)",
+      "institute": "Bangladesh University of Engineering and Technology (BUET)",
+      "duration": "12 Months",
+      "icon": "🖧"
+    },
+    {
+      "title": "HCIP Advanced Routing & Switching Technology",
+      "institute": "Huawei Bangladesh",
+      "duration": "6 Months",
+      "icon": "🌐"
+    },
+    {
+      "title": "APNIC Certified IPv6 Associate",
+      "institute": "APNIC",
+      "duration": "5 Days",
+      "icon": "🌍"
+    }
+  ]
+}

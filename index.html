@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Md. Habibullah Pappu | Network, System & Security Professional</title>
+    <meta name="description" content="Network, System & Security Professional. Manager, Core Network at HRC Technologies. CCNP, CCNA, HCIP certified. Expertise in core network operations, BGP, OSPF, IPv6, and data center management." />
+    <meta name="keywords" content="Network Engineer, System Specialist, CCNP, CCNA, Cisco, Huawei, MikroTik, Networking, Bangladesh, Core Network" />
+    <meta name="author" content="Md. Habibullah Pappu" />
+    <meta name="theme-color" content="#f5f7fa" />
+    <meta name="color-scheme" content="dark light" />
+    <link rel="canonical" href="https://habibpappu.github.io/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Md. Habibullah Pappu | Network, System & Security Professional" />
+    <meta property="og:description" content="Manager, Core Network at HRC Technologies. Networking, System Administration & Cyber Security specialist." />
+    <meta property="og:url" content="https://habibpappu.github.io/" />
+    <meta property="og:image" content="assets/profile-avatar.jpg" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Md. Habibullah Pappu | Network, System & Security Professional" />
+    <meta name="twitter:description" content="Manager, Core Network at HRC Technologies. Networking, System Administration & Cyber Security specialist." />
+    <meta name="twitter:image" content="assets/profile-avatar.jpg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+
+      :root {
+        --bg: #060b14;
+        --panel: #0d1420;
+        --panel-2: #101a29;
+        --border: #1c2839;
+        --border-soft: #16202f;
+        --text: #e8edf5;
+        --text-muted: #93a3ba;
+        --text-faint: #5c6d85;
+        --accent: #2dd4bf;
+        --accent-dim: #1ea89a;
+        --accent-soft: rgba(45, 212, 191, 0.12);
+        --status: #34d399;
+        --nav-bg: rgba(6, 11, 20, 0.85);
+      }
+
+      html[data-theme="light"] {
+        --bg: #f5f7fa;
+        --panel: #ffffff;
+        --panel-2: #eef1f6;
+        --border: #dde3ec;
+        --border-soft: #e6eaf1;
+        --text: #101826;
+        --text-muted: #56637a;
+        --text-faint: #8593ab;
+        --accent: #0d9488;
+        --accent-dim: #0f766e;
+        --accent-soft: rgba(13, 148, 136, 0.1);
+        --status: #059669;
+        --nav-bg: rgba(245, 247, 250, 0.85);
+      }
+
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 70px;
+      }
+
+      html, body { background: var(--bg); }
+
+      body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.65;
+        transition: background-color 0.25s ease, color 0.25s ease;
+        -webkit-font-smoothing: antialiased;
+        position: relative;
+      }
+
+      /* ---------- Page Loading Skeleton ---------- */
+      .page-loader {
+        position: fixed;
+        inset: 0;
+        background: var(--bg);
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: opacity 0.4s ease, visibility 0.4s ease;
+      }
+
+      .page-loader.hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+      }
+
+      .loader-spinner {
+        width: 40px;
+        height: 40px;
+        border: 3px solid var(--border);
+        border-top-color: var(--accent);
+        border-radius: 50%;
+        animation: spin 0.8s linear infinite;
+      }
+
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+
+      /* ---------- Scroll Progress Bar ---------- */
+      .scroll-progress {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 3px;
+        background: linear-gradient(90deg, var(--accent), var(--accent-dim));
+        z-index: 200;
+        transition: width 0.1s ease-out;
+        box-shadow: 0 0 8px var(--accent-soft);
+      }
+
+      /* ---------- Sticky Navigation ---------- */
+      .sticky-nav {
+        position: sticky;
+        top: 0;
+        background: var(--nav-bg);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-bottom: 1px solid var(--border-soft);
+        z-index: 100;
+        transition: background-color 0.25s ease, border-color 0.25s ease;
+      }
+
+      .sticky-nav .wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+        padding: 12px 32px;
+        overflow-x: auto;
+        scrollbar-width: none;
+      }
+
+      .sticky-nav .wrap::-webkit-scrollbar { display: none; }
+
+      .sticky-nav a {
+        color: var(--text-muted);
+        text-decoration: none;
+        font-size: 0.88em;
+        font-weight: 500;
+        padding: 8px 14px;
+        border-radius: 8px;
+        white-space: nowrap;
+        transition: color 0.2s ease, background-color 0.2s ease;
+      }
+
+      .sticky-nav a:hover {
+        color: var(--accent);
+        background: var(--accent-soft);
+      }
+
+      .sticky-nav a.active {
+        color: var(--accent);
+        background: var(--accent-soft);
+      }
+
+      h1, h2, h3 { font-family: 'Space Grotesk', 'Inter', sans-serif; }
+      .mono { font-family: 'JetBrains Mono', monospace; }
+      a { color: inherit; }
+
+      .wrap {
+        max-width: 840px;
+        margin: 0 auto;
+        padding: 0 32px;
+      }
+
+      /* ---------- Background grid texture (hero only) ---------- */
+      .hero {
+        position: relative;
+        padding: 96px 0 64px;
+        overflow: hidden;
+        background-image:
+          linear-gradient(var(--border-soft) 1px, transparent 1px),
+          linear-gradient(90deg, var(--border-soft) 1px, transparent 1px);
+        background-size: 42px 42px;
+        background-position: center top;
+        -webkit-mask-image: linear-gradient(to bottom, black 0%, black 70%, transparent 100%);
+        mask-image: linear-gradient(to bottom, black 0%, black 70%, transparent 100%);
+      }
+
+      .hero-inner {
+        display: flex;
+        align-items: flex-start;
+        gap: 40px;
+        opacity: 0;
+        transform: translateY(14px);
+        animation: heroIn 0.7s ease forwards;
+      }
+
+      @keyframes heroIn {
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      .avatar-frame {
+        flex: 0 0 auto;
+        width: 148px;
+        height: 148px;
+        border-radius: 20px;
+        padding: 3px;
+        background: linear-gradient(155deg, var(--accent), transparent 60%);
+      }
+
+      .avatar-frame img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 17px;
+        display: block;
+        background: var(--panel-2);
+      }
+
+      .hero-text h1 {
+        font-size: 2.15em;
+        font-weight: 700;
+        letter-spacing: -0.01em;
+        margin-bottom: 6px;
+      }
+
+      .role-line {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        color: var(--accent);
+        font-size: 1.08em;
+        font-weight: 500;
+        margin-bottom: 14px;
+      }
+
+      .bio {
+        color: var(--text-muted);
+        max-width: 58ch;
+        margin-bottom: 20px;
+      }
+
+      .contact-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 24px;
+      }
+
+      .chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.82em;
+        color: var(--text-muted);
+        background: var(--panel);
+        border: 1px solid var(--border);
+        padding: 7px 12px;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: border-color 0.2s ease, color 0.2s ease;
+      }
+
+      .chip:hover { border-color: var(--accent); color: var(--text); }
+      .chip svg { flex: 0 0 auto; width: 14px; height: 14px; stroke: currentColor; }
+
+      .action-row {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        flex-wrap: wrap;
+        margin-top: 22px;
+        padding-top: 22px;
+        border-top: 1px solid var(--border-soft);
+      }
+
+      .social-links { display: flex; gap: 10px; }
+
+      .social-links a {
+        width: 38px; height: 38px; display: flex; align-items: center; justify-content: center;
+        border: 1px solid var(--border); border-radius: 10px; background: var(--panel);
+        color: var(--text);
+        text-decoration: none;
+        transition: border-color 0.25s ease, color 0.25s ease, background-color 0.25s ease, transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+      }
+      .social-links a:hover {
+        border-color: var(--accent); color: var(--accent); background: var(--accent-soft);
+        transform: translateY(-2px);
+      }
+
+      .social-links svg { width: 18px; height: 18px; }
+
+      .cv-download {
+        display: inline-flex; align-items: center; gap: 8px; padding: 10px 18px;
+        background: var(--accent); color: #04241f; font-weight: 600; font-size: 0.92em;
+        text-decoration: none; border-radius: 10px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+        transition: background-color 0.25s ease, transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.25s ease;
+      }
+      .cv-download:hover {
+        background: var(--accent-dim); transform: translateY(-2px);
+        box-shadow: 0 6px 16px -6px var(--accent-soft);
+      }
+
+      .cv-download svg { width: 16px; height: 16px; stroke: currentColor; }
+
+      /* ---------- Sections ---------- */
+      section.block {
+        padding: 60px 0;
+        border-top: 1px solid var(--border-soft);
+      }
+
+      .section-head {
+        display: flex;
+        align-items: baseline;
+        gap: 12px;
+        margin-bottom: 24px;
+      }
+
+      .section-head .bar {
+        width: 3px;
+        height: 20px;
+        background: var(--accent);
+        border-radius: 2px;
+        flex: 0 0 auto;
+      }
+
+      .section-head h2 {
+        font-size: 1.4em;
+        font-weight: 600;
+      }
+
+      .panel {
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 34px;
+      }
+
+      .lede { color: var(--text-muted); max-width: 62ch; line-height: 1.8; }
+
+      /* ---------- Timeline (experience) ---------- */
+      .timeline {
+        position: relative;
+        padding-left: 30px;
+      }
+
+      .timeline:before {
+        content: "";
+        position: absolute;
+        left: 9px;
+        top: 6px;
+        bottom: 6px;
+        width: 1px;
+        background: var(--border);
+      }
+
+      .tl-item {
+        position: relative;
+        padding-bottom: 28px;
+      }
+
+      .tl-item:last-child { padding-bottom: 0; }
+
+      .tl-dot {
+        position: absolute;
+        left: -30px;
+        top: 4px;
+        width: 19px;
+        height: 19px;
+        border-radius: 50%;
+        background: var(--panel);
+        border: 2px solid var(--accent);
+      }
+
+      .tl-item.current .tl-dot {
+        background: var(--accent);
+        box-shadow: 0 0 0 4px var(--accent-soft);
+      }
+
+      .tl-head {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-bottom: 4px;
+      }
+
+      .co-logo {
+        width: 30px;
+        height: 30px;
+        border-radius: 7px;
+        border: 1px solid var(--border);
+        background: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        flex: 0 0 auto;
+      }
+
+      .co-logo img { width: 100%; height: 100%; object-fit: contain; padding: 3px; }
+
+      .co-logo.fallback {
+        background: var(--accent-soft);
+        color: var(--accent);
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.65em;
+        font-weight: 600;
+      }
+
+      .tl-role { font-weight: 600; font-size: 1.03em; }
+      .tl-company { color: var(--accent); font-size: 0.95em; }
+
+      .tl-duration {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.78em;
+        color: var(--text-faint);
+        margin-bottom: 10px;
+      }
+
+      .tl-list {
+        list-style: none;
+        color: var(--text-muted);
+        font-size: 0.95em;
+      }
+
+      .tl-list li {
+        position: relative;
+        padding-left: 18px;
+        margin-bottom: 6px;
+      }
+
+      .tl-list li:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0.65em;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: var(--text-faint);
+      }
+
+      /* ---------- Skills ---------- */
+      .skills-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .skill-tag {
+        background: var(--panel);
+        border: 1px solid var(--border);
+        padding: 9px 15px;
+        border-radius: 9px;
+        font-size: 0.88em;
+        color: var(--text-muted);
+      }
+
+      /* ---------- Logo grid (certs / training) ---------- */
+      .logo-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 14px;
+      }
+
+      .logo-card {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 16px;
+        transition: border-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+      }
+
+      .logo-card:hover {
+        border-color: var(--accent);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px -12px rgba(0, 0, 0, 0.35);
+      }
+
+      .logo-card .co-logo { width: 36px; height: 36px; border-radius: 8px; }
+      .logo-card .co-logo.fallback { font-size: 0.6em; }
+
+      .logo-card-text .cert-name {
+        font-size: 0.86em;
+        font-weight: 500;
+        line-height: 1.3;
+      }
+
+      .logo-card-text .cert-sub {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.72em;
+        color: var(--text-faint);
+        margin-top: 2px;
+      }
+
+      /* ---------- Education ---------- */
+      .edu-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 14px;
+        padding: 14px 0;
+        border-bottom: 1px solid var(--border-soft);
+      }
+
+      .edu-item:last-child { border-bottom: none; padding-bottom: 0; }
+      .edu-item:first-child { padding-top: 0; }
+
+      .edu-item .co-logo { width: 34px; height: 34px; border-radius: 8px; margin-top: 2px; }
+      .edu-degree { font-weight: 600; font-size: 0.98em; }
+      .edu-inst { color: var(--accent); font-size: 0.9em; margin-top: 1px; }
+      .edu-result { font-family: 'JetBrains Mono', monospace; font-size: 0.78em; color: var(--text-faint); margin-top: 3px; }
+
+      /* ---------- Simple icon list (awards / training conducted) ---------- */
+      .icon-list { list-style: none; }
+
+      .icon-list li {
+        display: flex;
+        gap: 12px;
+        padding: 8px 0;
+        border-bottom: 1px solid var(--border-soft);
+      }
+
+      .icon-list li:last-child { border-bottom: none; padding-bottom: 0; }
+      .icon-list li:first-child { padding-top: 0; }
+
+      .icon-badge {
+        flex: 0 0 auto; width: 34px; height: 34px; border-radius: 9px;
+        background: var(--accent-soft); display: flex; align-items: center; justify-content: center;
+        transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), background-color 0.25s ease;
+      }
+      .icon-badge svg { width: 17px; height: 17px; stroke: var(--accent); }
+      .icon-list li:hover .icon-badge { transform: scale(1.1); background: var(--accent); }
+      .icon-list li:hover .icon-badge svg { stroke: #04241f; }
+      .icon-text .icon-title { font-weight: 600; font-size: 0.95em; }
+      .icon-text .icon-sub { color: var(--text-faint); font-size: 0.82em; margin-top: 2px; }
+
+      /* ---------- Contact list (Get In Touch) ---------- */
+      .contact-list {
+        list-style: none;
+        margin-bottom: 20px;
+      }
+
+      .contact-list li {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 12px 0;
+        border-bottom: 1px solid var(--border-soft);
+      }
+
+      .contact-list li:last-child { border-bottom: none; padding-bottom: 0; }
+      .contact-list li:first-child { padding-top: 0; }
+
+      .contact-list .cl-icon {
+        flex: 0 0 auto;
+        width: 20px;
+        height: 20px;
+        stroke: var(--accent);
+      }
+
+      .contact-list .cl-text {
+        color: var(--text-muted);
+        font-size: 0.95em;
+      }
+
+      .contact-list a {
+        color: var(--text-muted);
+        text-decoration: none;
+        transition: color 0.2s ease;
+      }
+
+      .contact-list a:hover { color: var(--accent); }
+
+      /* ---------- Footer ---------- */
+      footer {
+        text-align: center;
+        padding: 40px 24px 56px;
+        color: var(--text-faint);
+        font-size: 0.85em;
+      }
+
+      /* ---------- Floating Buttons ---------- */
+      .floating-btn {
+        position: fixed;
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        background: var(--panel);
+        border: 1px solid var(--border);
+        font-size: 20px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9998;
+        color: var(--text);
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      .floating-btn:hover {
+        border-color: var(--accent);
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      .floating-btn:active {
+        transform: translateY(-1px);
+      }
+
+      .theme-toggle {
+        bottom: 26px;
+        right: 26px;
+      }
+
+      .back-to-top {
+        bottom: 26px;
+        right: 82px;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(10px);
+      }
+
+      .back-to-top.visible {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+
+      .back-to-top svg {
+        width: 20px;
+        height: 20px;
+        stroke: currentColor;
+      }
+
+      @media (max-width: 640px) {
+        .wrap { padding: 0 20px; }
+        .hero { padding: 64px 0 40px; }
+        .hero-inner { flex-direction: column; align-items: center; text-align: center; gap: 22px; }
+        .role-line { justify-content: center; }
+        .contact-row { justify-content: center; }
+        .action-row { justify-content: center; }
+        h1 { font-size: 1.7em !important; }
+        .bio { margin-left: auto; margin-right: auto; }
+        section.block { padding: 40px 0; }
+        .panel { padding: 20px; }
+        .sticky-nav .wrap {
+          justify-content: flex-start;
+          padding: 10px 20px;
+          gap: 2px;
+        }
+        .sticky-nav a {
+          font-size: 0.82em;
+          padding: 6px 10px;
+        }
+        .floating-btn {
+          width: 42px;
+          height: 42px;
+        }
+        .back-to-top {
+          right: 74px;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .hero-inner { animation: none; opacity: 1; transform: none; }
+        html { scroll-behavior: auto; }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Page Loader -->
+    <div class="page-loader" id="page-loader">
+      <div class="loader-spinner"></div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="floating-btn back-to-top" aria-label="Back to top" title="Back to top">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+    </button>
+
+    <!-- Theme Toggle -->
+    <button id="theme-toggle" class="floating-btn theme-toggle" aria-label="Toggle light and dark mode" title="Toggle theme">☀️</button>
+
+    <div id="root">
+
+      <!-- Hero -->
+      <header class="hero">
+        <div class="wrap hero-inner">
+          <div class="avatar-frame">
+            <img src="assets/profile-avatar.jpg" alt="Md. Habibullah Pappu" />
+          </div>
+          <div class="hero-text">
+            <h1>Md. Habibullah Pappu</h1>
+            <div class="role-line">
+              <span>Network, System &amp; Security Professional</span>
+            </div>
+            <p class="bio">
+              Through my journey, I have encountered lots of opportunities to experience and gather 
+              knowledge in networking, system and security domain. Now I am seeking new challenges 
+              and opportunities with an organization in need of someone similar to my skill sets and 
+              suitable for long term career goals. So that I can apply my knowledge and skills to achieve 
+              organizational goals, enhancing my skills to become a valuable resource to the employer.
+            </p>
+            <div class="contact-row">
+              <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Z"/><path d="m22 6-10 7L2 6"/></svg>pappuhabibullah@gmail.com</span>
+              <a class="chip" href="tel:+8801611581981"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>+880 1611-581981</a>
+              <a class="chip" href="tel:+8801970907655"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>+880 1970-907655</a>
+              <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Dhaka, Bangladesh</span>
+            </div>
+            <div class="action-row">
+              <a href="Md.%20Habibullah%20Pappu.pdf" download class="cv-download">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>
+                Download CV
+              </a>
+              <div class="social-links">
+                <a href="https://linkedin.com/in/habibullah-pappu/" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.119 20.452H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                </a>
+                <a href="https://github.com/habibpappu" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.955-.267 1.98-.399 3-.405 1.02.006 2.045.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Sticky Navigation -->
+      <nav class="sticky-nav">
+        <div class="wrap">
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#certifications">Certifications</a>
+          <a href="#education">Education</a>
+          <a href="#awards">Awards</a>
+          <a href="#training-conducted">Training</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+
+      <div class="wrap">
+
+        <!-- Professional Summary -->
+        <section class="block">
+          <div class="section-head"><span class="bar"></span><h2>Professional Summary</h2></div>
+          <div class="panel">
+            <p class="lede" style="max-width: none;">
+              Manager, Core Network at HRC Technologies Limited with 10+ years of experience running
+              nationwide network operations, system administration and infrastructure integration.
+              Hands-on experience with multi-vendor platforms, with a track record of leading
+              24/7 NOC, Core Network teams and proven experience in IIG, ITC, ISP, IPTSP, IGW/IOS, ICX and IXN network operations, 
+              peering and traffic engineering. 
+            </p>
+          </div>
+        </section>
+
+        <!-- Experience -->
+        <section class="block" id="experience">
+          <div class="section-head"><span class="bar"></span><h2>Professional Experience</h2></div>
+          <div class="timeline">
+
+            <div class="tl-item current">
+              <div class="tl-dot"></div>
+              <div class="tl-head">
+                <div class="co-logo"><img src="https://logo.clearbit.com/hrctech.net" alt="HRC Technologies" loading="lazy" onerror="logoFallback(this,'HRC')" /></div>
+                <div>
+                  <div class="tl-role">Manager &ndash; Core Network</div>
+                  <div class="tl-company">HRC Technologies Limited</div>
+                </div>
+              </div>
+              <div class="tl-duration mono">July 2026 &ndash; Present</div>
+              <ul class="tl-list">
+                <li>Lead planning, design and management of core network and system operations for high availability, reliability, security and performance</li>
+                <li>Manage integration and connectivity with IIG, NTTN, IX, CDN, cache platforms, upstream providers and third-party network partners</li>
+                <li>Collaborate cross-functionally to implement secure, scalable, high-performance network solutions</li>
+                <li>Prepare technical proposals, capacity plans, project documentation, management reports and budgets for infrastructure development</li>
+                <li>Drive continuous improvement to enhance network resilience, availability and operational efficiency</li>
+              </ul>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-head">
+                <div class="co-logo"><img src="https://logo.clearbit.com/bracnet.net" alt="BRACNet Limited" loading="lazy" onerror="logoFallback(this,'BN')" /></div>
+                <div>
+                  <div class="tl-role">Deputy Manager &ndash; Core Network</div>
+                  <div class="tl-company">BRACNet Limited</div>
+                </div>
+              </div>
+              <div class="tl-duration mono">January 2025 &ndash; June 2026</div>
+              <ul class="tl-list">
+                <li>Planned, designed and managed connectivity integration across upstream providers, telecom operators, banks, vendors and IXN partners</li>
+                <li>Delivered seamless internet and data connectivity leveraging routing &amp; switching technologies</li>
+                <li>Supervised a 24/7 core network operations team as primary escalation point during outages, with proactive trend analysis and incident tracking</li>
+                <li>Analyzed client requirements and coordinated with vendors and stakeholders while identifying process optimizations</li>
+                <li>Ensured timely fault detection and resolution with real-time updates to leadership</li>
+              </ul>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-head">
+                <div class="co-logo"><img src="https://logo.clearbit.com/bracnet.net" alt="BRACNet Limited" loading="lazy" onerror="logoFallback(this,'BN')" /></div>
+                <div>
+                  <div class="tl-role">Assistant Manager &ndash; Core Network</div>
+                  <div class="tl-company">BRACNet Limited</div>
+                </div>
+              </div>
+              <div class="tl-duration mono">July 2024 &ndash; December 2024</div>
+              <ul class="tl-list">
+                <li>End-to-end nationwide network management and integration with IIGs, IXNs and third-party entities, plus traffic engineering across upstream providers</li>
+                <li>Maintained cache servers (GGC, FNA) for content delivery and managed Inter-AS IX peering with IXP partners</li>
+                <li>Prepared SOPs, network diagrams, outage records, bandwidth/capacity reports and customer databases</li>
+                <li>Conducted R&amp;D and translated evaluation objectives into action plans to meet client requirements</li>
+              </ul>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-head">
+                <div class="co-logo"><img src="https://media.licdn.com/dms/image/v2/C4D0BAQGYrvIh4dcBkA/company-logo_200_200/company-logo_200_200/0/1630525590396/novocom_logo?e=2147483647&v=beta&t=K-1hUjfhjjSOKlellX7cmGm7tZaU4amDupE7wmE9ugA" alt="NovoCom Limited" loading="lazy" onerror="logoFallback(this,'NC')" /></div>
+                <div>
+                  <div class="tl-role">Senior System Engineer &ndash; Core Network Operations (IP &amp; Data)</div>
+                  <div class="tl-company">NovoCom Limited</div>
+                </div>
+              </div>
+              <div class="tl-duration mono">February 2023 &ndash; June 2024</div>
+              <ul class="tl-list">
+                <li>Provided Level-2/3 support across IIG, ITC, IGW, ISP, IPTSP and IXN network monitoring and operations</li>
+                <li>Helped set up the nationwide backbone network, provisioning suppliers for IIG, ITC and IGW</li>
+                <li>Managed routing policy and partner provisioning for NovoNIX ASN 63520 using BIRD Route Server</li>
+                <li>Set up and maintained NMS tooling for IIG, IP transit and ISP clients; tuned routing and prefixes for capacity and client requirements</li>
+              </ul>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-head">
+                <div class="co-logo"><img src="https://media.licdn.com/dms/image/v2/C4D0BAQGYrvIh4dcBkA/company-logo_200_200/company-logo_200_200/0/1630525590396/novocom_logo?e=2147483647&v=beta&t=K-1hUjfhjjSOKlellX7cmGm7tZaU4amDupE7wmE9ugA" alt="NovoCom Limited" loading="lazy" onerror="logoFallback(this,'NC')" /></div>
+                <div>
+                  <div class="tl-role">System Engineer &ndash; Core Network Operations (IP &amp; Data)</div>
+                  <div class="tl-company">NovoCom Limited</div>
+                </div>
+              </div>
+              <div class="tl-duration mono">January 2022 &ndash; January 2023</div>
+              <ul class="tl-list">
+                <li>Managed and troubleshot NovoCom (IIG/ITC), NovoTel (IGW/IOS) and InterCloud (ISP/IPTSP) core network on a 24/7 roster</li>
+                <li>Tuned routing and prefix control to match backbone capacity and client requirements</li>
+                <li>Handled trouble tickets and level 1/2 support across IIG, ITC, ISP, IPTSP, IGW and NIX clients</li>
+                <li>Maintained SOPs, network diagrams, outage records and capacity allocation reports</li>
+              </ul>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-head">
+                <div class="co-logo"><img src="https://media.licdn.com/dms/image/v2/C4D0BAQGYrvIh4dcBkA/company-logo_200_200/company-logo_200_200/0/1630525590396/novocom_logo?e=2147483647&v=beta&t=K-1hUjfhjjSOKlellX7cmGm7tZaU4amDupE7wmE9ugA" alt="NovoCom Limited" loading="lazy" onerror="logoFallback(this,'NC')" /></div>
+                <div>
+                  <div class="tl-role">System Engineer &ndash; Transmission Core &amp; Network Operations</div>
+                  <div class="tl-company">NovoCom Limited</div>
+                </div>
+              </div>
+              <div class="tl-duration mono">August 2021 &ndash; December 2021</div>
+              <ul class="tl-list">
+                <li>24/7 roster IP &amp; SDH network monitoring for ISP/IIG/ITC/IPLC/IGW/IPTSP/ICX</li>
+                <li>Worked across NMS/EMS tools for monitoring, inspection and fault diagnostics</li>
+                <li>Provisioned internet, L2/L3 data services and TDM connectivity via transmission infrastructure</li>
+              </ul>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-head">
+                <div class="co-logo"><img src="https://www.iofbd.com/assets/img/igwlists/lr_telecom.jpg" alt="LR Telecom Limited" loading="lazy" onerror="this.closest('.co-logo').classList.add('fallback'); this.closest('.co-logo').textContent='LR';" /></div>
+                <div>
+                  <div class="tl-role">Engineer (NOC)</div>
+                  <div class="tl-company">LR Telecom Limited</div>
+                </div>
+              </div>
+              <div class="tl-duration mono">January 2021 &ndash; July 2021</div>
+              <ul class="tl-list">
+                <li>Monitored live data &amp; SDH network, bandwidth utilization and IPLC alarms on a roster basis</li>
+                <li>Configured soft switches and ran regular health checks on core Cisco routers/switches and MUX equipment</li>
+                <li>Provisioned IOS operators and international voice carriers per SOF; coordinated with IGW/ICX/IOS operators on fault escalation</li>
+              </ul>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-head">
+                <div class="co-logo"><img src="https://www.iofbd.com/assets/img/igwlists/lr_telecom.jpg" alt="LR Telecom Limited" loading="lazy" onerror="this.closest('.co-logo').classList.add('fallback'); this.closest('.co-logo').textContent='LR';" /></div>
+                <div>
+                  <div class="tl-role">Assistant Engineer (NOC)</div>
+                  <div class="tl-company">LR Telecom Limited</div>
+                </div>
+              </div>
+              <div class="tl-duration mono">May 2018 &ndash; December 2020</div>
+              <ul class="tl-list">
+                <li>Monitored live data &amp; SDH network, bandwidth utilization and IPLC alarms on a roster basis</li>
+                <li>Configured soft switches and maintained core devices and MUX functionality</li>
+                <li>Provisioned IOS operators and voice carriers; escalated and resolved faults with IGW/ICX/IOS partners</li>
+              </ul>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-head">
+                <div class="co-logo"><img src="https://logo.clearbit.com/daffodilvarsity.edu.bd" alt="Daffodil International University" loading="lazy" onerror="logoFallback(this,'DIU')" /></div>
+                <div>
+                  <div class="tl-role">Teaching Assistant</div>
+                  <div class="tl-company">Daffodil International University</div>
+                </div>
+              </div>
+              <div class="tl-duration mono">September 2016 &ndash; April 2018</div>
+              <ul class="tl-list">
+                <li>Built course and lesson plans and tracked students' academic progress</li>
+                <li>Supported student development, learning outcomes and classroom management</li>
+                <li>Implemented blended learning using MOODLE and Google Classroom</li>
+                <li>Organized seminars and workshops with industry stakeholders</li>
+              </ul>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="block" id="skills">
+          <div class="section-head"><span class="bar"></span><h2>Technical Skills</h2></div>
+          <div class="skills-grid">
+            <span class="skill-tag">Network Design &amp; Management</span>
+            <span class="skill-tag">Cisco Routing &amp; Switching</span>
+            <span class="skill-tag">BGP &amp; OSPF</span>
+            <span class="skill-tag">Huawei Datacom</span>
+            <span class="skill-tag">MikroTik Configuration</span>
+            <span class="skill-tag">IPv6 Networking</span>
+            <span class="skill-tag">Network Security</span>
+            <span class="skill-tag">System Administration</span>
+            <span class="skill-tag">Linux / RHEL</span>
+            <span class="skill-tag">Data Center Operations</span>
+            <span class="skill-tag">ISP &amp; IIG/ITC Management</span>
+            <span class="skill-tag">Technical Documentation</span>
+          </div>
+        </section>
+
+        <!-- Certifications -->
+        <section class="block" id="certifications">
+          <div class="section-head"><span class="bar"></span><h2>Professional Certifications</h2></div>
+          <div class="logo-grid">
+
+            <div class="logo-card">
+              <div class="co-logo"><img src="https://logo.clearbit.com/cisco.com" alt="Cisco" loading="lazy" onerror="logoFallback(this,'CS')" /></div>
+              <div class="logo-card-text"><div class="cert-name">CCNP Enterprise Core (ENCOR) &ndash; Cisco Certified Network Professional</div><div class="cert-sub">Cisco</div></div>
+            </div>
+            <div class="logo-card">
+              <div class="co-logo"><img src="https://logo.clearbit.com/cisco.com" alt="Cisco" loading="lazy" onerror="logoFallback(this,'CS')" /></div>
+              <div class="logo-card-text"><div class="cert-name">CCNA &ndash; Cisco Certified Network Associate</div><div class="cert-sub">Cisco</div></div>
+            </div>
+            
+            <div class="logo-card">
+              <div class="co-logo"><img src="https://logo.clearbit.com/apnic.net" alt="APNIC" loading="lazy" onerror="logoFallback(this,'AP')" /></div>
+              <div class="logo-card-text"><div class="cert-name">Certified IPv6 Associate</div><div class="cert-sub">APNIC</div></div>
+            </div>
+            <div class="logo-card">
+              <div class="co-logo"><img src="https://logo.clearbit.com/huawei.com" alt="Huawei" loading="lazy" onerror="logoFallback(this,'HW')" /></div>
+              <div class="logo-card-text"><div class="cert-name">HCIP Datacom &ndash; Advanced Routing &amp; Switching (Huawei Certified ICT Professional)</div><div class="cert-sub">Huawei</div></div>
+            </div>
+            <div class="logo-card">
+              <div class="co-logo"><img src="https://logo.clearbit.com/huawei.com" alt="Huawei" loading="lazy" onerror="logoFallback(this,'HW')" /></div>
+              <div class="logo-card-text"><div class="cert-name">HCIP Datacom &ndash; Core Technology (Huawei Certified ICT Professional)</div><div class="cert-sub">Huawei</div></div>
+            </div>
+            <div class="logo-card">
+              <div class="co-logo"><img src="https://logo.clearbit.com/huawei.com" alt="Huawei" loading="lazy" onerror="logoFallback(this,'HW')" /></div>
+              <div class="logo-card-text"><div class="cert-name">HCIA Datacom (Huawei Certified ICT Associate)</div><div class="cert-sub">Huawei</div></div>
+            </div>
+            <div class="logo-card">
+              <div class="co-logo"><img src="https://logo.clearbit.com/huawei.com" alt="Huawei" loading="lazy" onerror="logoFallback(this,'HW')" /></div>
+              <div class="logo-card-text"><div class="cert-name">Datacom Campus Network Associate</div><div class="cert-sub">Huawei</div></div>
+            </div>
+            <div class="logo-card">
+              <div class="co-logo"><img src="https://logo.clearbit.com/mikrotik.com" alt="MikroTik" loading="lazy" onerror="logoFallback(this,'MT')" /></div>
+              <div class="logo-card-text"><div class="cert-name">MTCINE &ndash; MikroTik Certified Internetworking Engineer</div><div class="cert-sub">MikroTik</div></div>
+            </div>
+            <div class="logo-card">
+              <div class="co-logo"><img src="https://logo.clearbit.com/mikrotik.com" alt="MikroTik" loading="lazy" onerror="logoFallback(this,'MT')" /></div>
+              <div class="logo-card-text"><div class="cert-name">MTCSE &ndash; MikroTik Certified Security Engineer</div><div class="cert-sub">MikroTik</div></div>
+            </div>
+            <div class="logo-card">
+              <div class="co-logo"><img src="https://logo.clearbit.com/mikrotik.com" alt="MikroTik" loading="lazy" onerror="logoFallback(this,'MT')" /></div>
+              <div class="logo-card-text"><div class="cert-name">MTCRE &ndash; MikroTik Certified Routing Engineer</div><div class="cert-sub">MikroTik</div></div>
+            </div>
+            <div class="logo-card">
+              <div class="co-logo"><img src="https://logo.clearbit.com/mikrotik.com" alt="MikroTik" loading="lazy" onerror="logoFallback(this,'MT')" /></div>
+              <div class="logo-card-text"><div class="cert-name">MTCNA &ndash; MikroTik Certified Network Associate</div><div class="cert-sub">MikroTik</div></div>
+            </div>
+            <div class="logo-card">
+              <div class="co-logo"><img src="https://logo.clearbit.com/fortinet.com" alt="Fortinet" loading="lazy" onerror="logoFallback(this,'FN')" /></div>
+              <div class="logo-card-text"><div class="cert-name">NSE 4 &ndash; Fortinet Network Security Professional</div><div class="cert-sub">Fortinet</div></div>
+            </div>
+            <div class="logo-card">
+              <div class="co-logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMsbyPKRJROqLk2I9zvB2UxW_dmtslkSIOPBBY-OxLPg&s" alt="ACMP" loading="lazy" onerror="this.closest('.co-logo').classList.add('fallback'); this.closest('.co-logo').textContent='ACMP';" /></div>
+              <div class="logo-card-text"><div class="cert-name">Advanced Certificate for Management Professionals 4.0</div><div class="cert-sub">ACMP</div></div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- Training Attended -->
+        <section class="block">
+          <div class="section-head"><span class="bar"></span><h2>Training Attended</h2></div>
+          <div class="logo-grid">
+            <div class="logo-card">
+              <div class="co-logo"><img src="https://logo.clearbit.com/redhat.com" alt="Red Hat" loading="lazy" onerror="logoFallback(this,'RH')" /></div>
+              <div class="logo-card-text"><div class="cert-name">Red Hat Certified System Administrator</div><div class="cert-sub">NovoCom Limited &middot; 4 months</div></div>
+            </div>
+            <div class="logo-card">
+              <div class="co-logo"><img src="https://logo.clearbit.com/cisco.com" alt="Cisco" loading="lazy" onerror="logoFallback(this,'CS')" /></div>
+              <div class="logo-card-text"><div class="cert-name">CCNP Enterprise Core (ENCOR)</div><div class="cert-sub">Open ICT Ltd. &middot; 8 months</div></div>
+            </div>
+            <div class="logo-card">
+              <div class="co-logo"><img src="https://logo.clearbit.com/cisco.com" alt="Cisco" loading="lazy" onerror="logoFallback(this,'CS')" /></div>
+              <div class="logo-card-text"><div class="cert-name">CCNA</div><div class="cert-sub">BUET &middot; 12 months</div></div>
+            </div>
+            <div class="logo-card">
+              <div class="co-logo"><img src="https://logo.clearbit.com/huawei.com" alt="Huawei" loading="lazy" onerror="logoFallback(this,'HW')" /></div>
+              <div class="logo-card-text"><div class="cert-name">HCIP Advanced Routing &amp; Switching</div><div class="cert-sub">Huawei Bangladesh &middot; 6 months</div></div>
+            </div>
+            <div class="logo-card">
+              <div class="co-logo"><img src="https://logo.clearbit.com/apnic.net" alt="APNIC" loading="lazy" onerror="logoFallback(this,'AP')" /></div>
+              <div class="logo-card-text"><div class="cert-name">Certified IPv6 Associate</div><div class="cert-sub">APNIC &middot; 5 days</div></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Education -->
+        <section class="block" id="education">
+          <div class="section-head"><span class="bar"></span><h2>Education</h2></div>
+          <div class="panel">
+            <div class="edu-item">
+              <div class="co-logo"><img src="https://logo.clearbit.com/uiu.ac.bd" alt="United International University" loading="lazy" onerror="logoFallback(this,'UIU')" /></div>
+              <div>
+                <div class="edu-degree">M.Sc. in Computer Science and Engineering (Major in Cyber Security)</div>
+                <div class="edu-inst">United International University (UIU)</div>
+                <div class="edu-result">Currently enrolled</div>
+              </div>
+            </div>
+            <div class="edu-item">
+              <div class="co-logo"><img src="https://logo.clearbit.com/daffodilvarsity.edu.bd" alt="Daffodil International University" loading="lazy" onerror="logoFallback(this,'DIU')" /></div>
+              <div>
+                <div class="edu-degree">B.Sc. in Electronics and Telecommunication Engineering</div>
+                <div class="edu-inst">Daffodil International University (DIU)</div>
+                <div class="edu-result">CGPA 3.83 / 4.00</div>
+              </div>
+            </div>
+            <div class="edu-item">
+              <div class="co-logo fallback">HSC</div>
+              <div>
+                <div class="edu-degree">Higher Secondary Certificate</div>
+                <div class="edu-result">GPA 4.10 / 5.00</div>
+              </div>
+            </div>
+            <div class="edu-item">
+              <div class="co-logo fallback">SSC</div>
+              <div>
+                <div class="edu-degree">Secondary School Certificate</div>
+                <div class="edu-result">GPA 5.00 / 5.00</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Awards -->
+        <section class="block" id="awards">
+          <div class="section-head"><span class="bar"></span><h2>Awards &amp; Recognition</h2></div>
+          <ul class="icon-list">
+            <li>
+              <div class="icon-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+              </div>
+              <div class="icon-text"><div class="icon-title">Huawei Most Valuable Engineer &ndash; 2025</div><div class="icon-sub">Huawei Asia Pacific Region</div></div>
+            </li>
+            <li>
+              <div class="icon-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+              </div>
+              <div class="icon-text"><div class="icon-title">Huawei O3 Top Member Award &ndash; 2025</div><div class="icon-sub">Huawei Asia Pacific Region</div></div>
+            </li>
+            <li>
+              <div class="icon-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+              <div class="icon-text"><div class="icon-title">Top Performer Award &ndash; Q1, 2025</div><div class="icon-sub">BRACNet Limited</div></div>
+            </li>
+            <li>
+              <div class="icon-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+              <div class="icon-text"><div class="icon-title">Best Employee Award &ndash; Q4, 2024</div><div class="icon-sub">BRACNet Core Network Rearrangement Project</div></div>
+            </li>
+            <li>
+              <div class="icon-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              </div>
+              <div class="icon-text"><div class="icon-title">Students Merit Scholarship</div><div class="icon-sub">B.Sc Program</div></div>
+            </li>
+            <li>
+              <div class="icon-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+              </div>
+              <div class="icon-text"><div class="icon-title">Champion &ndash; Intra-Department Debate Competition</div><div class="icon-sub">Department of ETE (2016 &amp; 2017)</div></div>
+            </li>
+            <li>
+              <div class="icon-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+              </div>
+              <div class="icon-text"><div class="icon-title">Runner-Up &ndash; Inter-Department Debate Championship 2015</div><div class="icon-sub">Daffodil International University Debating Club (DIUDC)</div></div>
+            </li>
+            <li>
+              <div class="icon-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+              </div>
+              <div class="icon-text"><div class="icon-title">Champion &amp; Best Debater &ndash; Jatio Durniti Protirodh Soptaho 2013</div><div class="icon-sub">Bogura Region &middot; Anti-Corruption Commission (DUDOK)</div></div>
+            </li>
+            <li>
+              <div class="icon-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+              </div>
+              <div class="icon-text"><div class="icon-title">National Environment Day 2011 Award for Social Works</div><div class="icon-sub">Rural Services Foundation (RSF), a Rahimafrooz Limited initiative</div></div>
+            </li>
+            <li>
+              <div class="icon-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+              </div>
+              <div class="icon-text"><div class="icon-title">Champion &amp; Best Debater &ndash; School Debate Competition 2009</div><div class="icon-sub">Bogura Region &middot; organized by BRAC</div></div>
+            </li>
+            <li>
+              <div class="icon-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+              </div>
+              <div class="icon-text"><div class="icon-title">Champion &amp; Best Debater &ndash; Jatiyo Shishu Mousumi Protijogita 2005</div><div class="icon-sub">Joypurhat District &middot; Bangladesh Government</div></div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Training Conducted -->
+        <section class="block" id="training-conducted">
+          <div class="section-head"><span class="bar"></span><h2>Training Sessions Conducted</h2></div>
+          <ul class="icon-list">
+            <li>
+              <div class="icon-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="8" y1="22" x2="16" y2="22"/></svg>
+              </div>
+              <div class="icon-text"><div class="icon-title">Networking BootCamp: Basics to Beyond</div><div class="icon-sub">BRACNet Customer Support Team &middot; September 27, 2025</div></div>
+            </li>
+            <li>
+              <div class="icon-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </div>
+              <div class="icon-text"><div class="icon-title">Mastering IPv6: The Next Generation Internet Protocol</div><div class="icon-sub">BRACNet Network &amp; System Solution Team &middot; May 28, 2025</div></div>
+            </li>
+            <li>
+              <div class="icon-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+              </div>
+              <div class="icon-text"><div class="icon-title">Networking with MikroTik</div><div class="icon-sub">BRACNet Transmission Team &middot; December 21, 2024</div></div>
+            </li>
+            <li>
+              <div class="icon-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              </div>
+              <div class="icon-text"><div class="icon-title">Traffic Flow Analysis &ndash; IIG, ITC, ISP, IXN</div><div class="icon-sub">NovoCom Data NOC Team (Co-Trainer) &middot; January 27, 2024</div></div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Contact -->
+        <section class="block" id="contact">
+          <div class="section-head"><span class="bar"></span><h2>Get In Touch</h2></div>
+          <div class="panel">
+            <p class="lede" style="margin-bottom: 24px;">
+              Always happy to connect about network engineering, infrastructure projects, or new
+              opportunities. Reach out through whichever channel works best for you.
+            </p>
+            <ul class="contact-list">
+              <li>
+                <svg class="cl-icon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Z"/><path d="m22 6-10 7L2 6"/></svg>
+                <span class="cl-text"><a href="mailto:pappuhabibullah@gmail.com">pappuhabibullah@gmail.com</a></span>
+              </li>
+              <li>
+                <svg class="cl-icon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+                <span class="cl-text"><a href="tel:+8801611581981">+880 1611-581981</a></span>
+              </li>
+              <li>
+                <svg class="cl-icon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+                <span class="cl-text"><a href="tel:+8801970907655">+880 1970-907655</a></span>
+              </li>
+              <li>
+                <svg class="cl-icon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span class="cl-text">Dhaka, Bangladesh</span>
+              </li>
+            </ul>
+            <div class="social-links">
+              <a href="https://linkedin.com/in/habibullah-pappu/" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.119 20.452H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </a>
+              <a href="https://github.com/habibpappu" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.955-.267 1.98-.399 3-.405 1.02.006 2.045.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              </a>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <footer>
+        <p>&copy; 2026 Md. Habibullah Pappu. All rights reserved.</p>
+      </footer>
+    </div>
+
+    <script>
+      // Logo fallback function (must be global)
+      function logoFallback(img, initials) {
+        if (!img.dataset.stage) {
+          img.dataset.stage = '1';
+          var domain = img.src.split('clearbit.com/')[1];
+          if (domain) {
+            img.src = 'https://www.google.com/s2/favicons?domain=' + domain + '&sz=64';
+            return;
+          }
+        }
+        var wrap = img.closest('.co-logo');
+        if (wrap) {
+          wrap.classList.add('fallback');
+          wrap.textContent = initials;
+        }
+      }
+
+      // Initialize when DOM is ready
+      document.addEventListener('DOMContentLoaded', function() {
+        // Page loader
+        var loader = document.getElementById('page-loader');
+        setTimeout(function() {
+          loader.classList.add('hidden');
+        }, 300);
+
+        // Get button elements
+        var backToTop = document.getElementById('back-to-top');
+        var themeToggle = document.getElementById('theme-toggle');
+        var scrollProgress = document.getElementById('scroll-progress');
+        var root = document.documentElement;
+
+        // Theme initialization
+        var savedTheme = localStorage.getItem('theme') || 'light';
+        root.setAttribute('data-theme', savedTheme);
+        themeToggle.textContent = savedTheme === 'light' ? '☀️' : '🌙';
+
+        // Theme toggle handler
+        themeToggle.addEventListener('click', function() {
+          var current = root.getAttribute('data-theme');
+          var next = current === 'dark' ? 'light' : 'dark';
+          root.setAttribute('data-theme', next);
+          localStorage.setItem('theme', next);
+          themeToggle.textContent = next === 'light' ? '☀️' : '🌙';
+        });
+
+        // Back to top handler
+        backToTop.addEventListener('click', function() {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Scroll handler
+        function onScroll() {
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+          var docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          var scrollPercent = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+          
+          // Update progress bar
+          scrollProgress.style.width = scrollPercent + '%';
+
+          // Show/hide back to top button
+          if (scrollTop > 500) {
+            backToTop.classList.add('visible');
+          } else {
+            backToTop.classList.remove('visible');
+          }
+
+          // Update active nav link
+          updateActiveNav();
+        }
+
+        // Active navigation
+        var navLinks = document.querySelectorAll('.sticky-nav a');
+        var sections = [];
+        navLinks.forEach(function(link) {
+          var id = link.getAttribute('href').substring(1);
+          var section = document.getElementById(id);
+          if (section) {
+            sections.push({ el: section, link: link });
+          }
+        });
+
+        function updateActiveNav() {
+          var scrollPos = window.pageYOffset + 100;
+          var current = null;
+
+          for (var i = 0; i < sections.length; i++) {
+            if (sections[i].el.offsetTop <= scrollPos) {
+              current = sections[i];
+            }
+          }
+
+          navLinks.forEach(function(link) {
+            link.classList.remove('active');
+          });
+
+          if (current) {
+            current.link.classList.add('active');
+          }
+        }
+
+        // Attach scroll listener
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll(); // Initial call
+      });
+    </script>
+  </body>
+</html>
